@@ -24,3 +24,7 @@ console.log(product.title);
 //array types
 
 const products: string[] = ["book", "tv"];
+
+//tuples types
+
+const category: [number, string] = [2, "learning"];
