@@ -20,3 +20,7 @@ const product: {
 };
 
 console.log(product.title);
+
+//array types
+
+const products: string[] = ["book", "tv"];
