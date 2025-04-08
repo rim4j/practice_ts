@@ -28,3 +28,22 @@ const products: string[] = ["book", "tv"];
 //tuples types
 
 const category: [number, string] = [2, "learning"];
+
+//enums
+
+enum Color {
+  RED,
+  GREEN,
+  BLUE,
+}
+
+const enumProduct = {
+  id: 1,
+  title: "book",
+  price: 99,
+  color: Color.RED,
+};
+
+if (enumProduct.color === Color.RED) {
+  console.log("product not exist");
+}
