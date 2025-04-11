@@ -122,3 +122,16 @@ const literalAddCombine = (
 console.log(literalAdd(5, 3, "is-number"));
 console.log(literalAdd("5", "3", "is-number"));
 console.log(literalAdd("book1", "book2", "is-string"));
+
+//function-type
+console.log("----------------------------------function-type");
+
+const addFuncType = (num1: number, num2: number): number => {
+  return num1 + num2;
+};
+
+let addFuncCombine: (a: number, b: number) => number;
+
+addFuncCombine = addFuncType;
+
+console.log(addFuncCombine(2, 8));

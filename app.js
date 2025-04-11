@@ -82,3 +82,11 @@ var literalAddCombine = function (input1, input2, resultType) {
 console.log(literalAdd(5, 3, "is-number"));
 console.log(literalAdd("5", "3", "is-number"));
 console.log(literalAdd("book1", "book2", "is-string"));
+//function-type
+console.log("----------------------------------function-type");
+var addFuncType = function (num1, num2) {
+    return num1 + num2;
+};
+var addFuncCombine;
+addFuncCombine = addFuncType;
+console.log(addFuncCombine(2, 8));
