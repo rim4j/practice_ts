@@ -90,3 +90,12 @@ var addFuncType = function (num1, num2) {
 var addFuncCombine;
 addFuncCombine = addFuncType;
 console.log(addFuncCombine(2, 8));
+//callbacks
+console.log("----------------------------------callbacks");
+var callBacksFuncAdd = function (num1, num2, cb) {
+    var result = num1 + num2;
+    cb(result);
+};
+callBacksFuncAdd(2, 4, function (result) {
+    console.log(result);
+});

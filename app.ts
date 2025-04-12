@@ -135,3 +135,19 @@ let addFuncCombine: (a: number, b: number) => number;
 addFuncCombine = addFuncType;
 
 console.log(addFuncCombine(2, 8));
+
+//callbacks
+console.log("----------------------------------callbacks");
+
+const callBacksFuncAdd = (
+  num1: number,
+  num2: number,
+  cb: (num: number) => void
+) => {
+  const result = num1 + num2;
+  cb(result);
+};
+
+callBacksFuncAdd(2, 4, (result) => {
+  console.log(result);
+});
